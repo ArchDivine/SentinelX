@@ -15,7 +15,7 @@ if not game:IsLoaded() then
 	wait(0.5)
 	if game:IsLoaded() then
 		if DebugMode then
-			warn("DomainX - AutoExec Detection false")
+			warn("SentinelX - AutoExec Detection false")
 		end
 		return
 	else
@@ -61,7 +61,7 @@ for _, ui in ipairs(game:GetService("CoreGui"):GetChildren()) do
 end
 
 if DebugMode then
-	warn("DomainX - Protected KeyUI")
+	warn("SentinelX - Protected KeyUI")
 end
 
 local http_request = http_request;
@@ -2581,11 +2581,11 @@ function ChangeWallpaper(WallpaperFileName)
 			Domain.Home.Wallpaper.ImageTransparency = 1
 			if getsynasset then
 				Domain.Home.Wallpaper.Image = getsynasset(WallpaperFileName)
-				writefile("DomainX Wallpaper.txt",WallpaperFileName)
+				writefile("SentinelX Wallpaper.txt",WallpaperFileName)
 				Toast("Sucessfully changed wallpaper to "..WallpaperFileName)
 			elseif getcustomasset then
 				Domain.Home.Wallpaper.Image = getcustomasset(WallpaperFileName)
-				writefile("DomainX Wallpaper.txt",WallpaperFileName)
+				writefile("SentinelX Wallpaper.txt",WallpaperFileName)
 				Toast("Sucessfully changed wallpaper to "..WallpaperFileName)
 			else
 				Toast("Missing getcustomasset function")
@@ -2601,8 +2601,8 @@ end
 
 Domain.Home.WallpaperManage.None.Interact.MouseButton1Click:Connect(function()
 	if CheckWritefile() then
-		if isfile("DomainX Wallpaper.txt") then
-			delfile("DomainX Wallpaper.txt")
+		if isfile("SentinelX Wallpaper.txt") then
+			delfile("SentinelX Wallpaper.txt")
 			Domain.Home.WallpaperManage.WBG.WBox.Text = ""
 		end
 	end
@@ -3611,11 +3611,11 @@ end
 
 function VersionCheck()
 	if DebugMode then
-		warn("DomainX - Starting Version Check")
+		warn("SentinelX - Starting Version Check")
 	end
 	if isfile("DomainX Version.txt") then
 		if DebugMode then
-			warn("DomainX - Version File Existent")
+			warn("SentinelX - Version File Existent")
 		end
 		if tostring(readfile("DomainX Version.txt")) ~= tostring(Release) then
 			Notify("Update installed","DomainX was updated to "..ReleaseType.." "..Release,4400701828)
@@ -3625,13 +3625,13 @@ function VersionCheck()
 			end
 			writefile("DomainX Version.txt",tostring(Release))
 			if DebugMode then
-				warn("DomainX - New Version, writing over")
+				warn("SentinelX - New Version, writing over")
 			end
 			local HttpService = game:GetService("HttpService")
 			local RequestEnabled = (syn and syn.request) or (http and http.request) or http_request
 			if RequestEnabled and not UserIsPremium then
 				if DebugMode then
-					warn("DomainX - Joining Discord")
+					warn("SentinelX - Joining Discord")
 				end
 				RequestEnabled({
 					Url = 'http://127.0.0.1:6463/rpc?v=1',
@@ -3650,23 +3650,23 @@ function VersionCheck()
 		end
 	else
 		if DebugMode then
-			warn("DomainX - No Version File")
+			warn("SentinelX - No Version File")
 		end
 		if not firsttime then
 			if DebugMode then
-				warn("DomainX - Not First Time, notifying")
+				warn("SentinelX - Not First Time, notifying")
 			end
 			Notify("Update installed","DomainX was updated to "..ReleaseType.." "..Release,4400701828)
 			local num = math.random(1,5)
 			if num == 2 then
 				PromptPremium()
 				if DebugMode then
-					warn("DomainX - Prompting Premium")
+					warn("SentinelX - Prompting Premium")
 				end
 			end
 		end
 		if DebugMode then
-			warn("DomainX - Could be first time, continuing")
+			warn("SentinelX - Could be first time, continuing")
 		end
 		local HttpService = game:GetService("HttpService")
 		local RequestEnabled = (syn and syn.request) or (http and http.request) or http_request
@@ -3685,11 +3685,11 @@ function VersionCheck()
 				})
 			})
 			if DebugMode then
-				warn("DomainX - Joining Discord")
+				warn("SentinelX - Joining Discord")
 			end
 		end
 		if DebugMode then
-			warn("DomainX - Starting writefile")
+			warn("SentinelX - Starting writefile")
 		end
 		writefile("DomainX Version.txt",tostring(Release))
 		if DebugMode then
@@ -3707,7 +3707,7 @@ function ContinueBoot()
 	FirstCheck()
 	VersionCheck()
 	if DebugMode then
-		warn("DomainX - Checked Version success")
+		warn("SentinelX - Checked Version success")
 	end
 
 	if getconnections then
@@ -3724,7 +3724,7 @@ function ContinueBoot()
 		end
 	end
 	if DebugMode then
-		warn("DomainX - Increasing ZIndex")
+		warn("SentinelX - Increasing ZIndex")
 	end
 	if UserIsPro and ThemeEnabled then
 		LoadThemes()
@@ -3761,7 +3761,7 @@ function ContinueBoot()
 	Domain.Main.Visible = true
 
 	if DebugMode then
-		warn("DomainX - Started AntiKick and AntiIdle")
+		warn("SentinelX - Started AntiKick and AntiIdle")
 	end
 
 
@@ -3956,7 +3956,7 @@ end
 
 function CheckLatest()
 	if DebugMode then
-		warn("DomainX - Checking version")
+		warn("SentinelX - Checking version")
 	end
 	--loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/domainx/main/routine',true))()
 	--local ver = game:HttpGet('https://raw.githubusercontent.com/shlexware/domainx/main/latest')
