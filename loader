@@ -105,7 +105,7 @@ else
 end
 
 if DebugMode then
-	warn("DomainX - Protected Main UI")
+	warn("SentinelX - Protected Main UI")
 end
 
 Domain.Parent = parent
@@ -215,7 +215,7 @@ local UniversalScripts = {
 		Colour = Color3.fromRGB(57, 57, 57),
 	},
 	SiriusUni = {
-		Name = "SentinelX Universal",
+		Name = "Sirius Universal",
 		Author = "Sentinel",
 		Loadstring = "https://raw.githubusercontent.com/shlexware/Sirius/request/game/Universal",
 		Colour = Color3.fromRGB(188, 57, 59),
