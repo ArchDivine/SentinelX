@@ -3776,37 +3776,37 @@ function ContinueBoot()
 		end
 		Domain.Home.User.Avatar.Image = game:GetService("Players"):GetUserThumbnailAsync(LocalPlayer.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
 		if DebugMode then
-			warn("DomainX - Finished Player Data")
+			warn("SentinelX - Finished Player Data")
 		end	
 	end
 	if not Connected then
-		Toast("Unable to connect to DomainX server","GothamBold")
+		Toast("Unable to connect to SentinelX server","GothamBold")
 		UserIsPremium = false
 		UserIsPro = false
 	end	
 	if not ExecutorAutomatic or firsttime then
 		if DebugMode then
-			warn("DomainX - First time or not autoexec")
+			warn("SentinelX - First time or not autoexec")
 		end
 		local sound = Instance.new("Sound")
 		sound.Parent = Domain
 		sound.SoundId = "rbxassetid://"..6958727243
 		sound.Name = "boot"
 		if DebugMode then
-			warn("DomainX - Instance Success!")
+			warn("SentinelX - Instance Success!")
 		end
 		sound.Volume = 10
 		sound.PlayOnRemove = true
 		if DebugMode then
-			warn("DomainX - Waiting for sound load")
+			warn("SentinelX - Waiting for sound load")
 		end
 		sound:Destroy()
 		if DebugMode then
-			warn("DomainX - Destroyed sound (loaded)")
+			warn("SentinelX - Destroyed sound (loaded)")
 		end
 		wait(0.75)
 		if DebugMode then
-			warn("DomainX - Preparing effect")
+			warn("SentinelX - Preparing effect")
 		end
 		if workspace.CurrentCamera.FieldOfView <= 71 and workspace.CurrentCamera.FieldOfView >= 70  then
 			if DebugMode then
@@ -3823,14 +3823,14 @@ function ContinueBoot()
 		wait(0.6)
 		Domain.Main.KeybindNote.Visible = false
 		if DebugMode then
-			warn("DomainX - Keybind Note false")
+			warn("SentinelX - Keybind Note false")
 		end
 		if DebugMode then
-			warn("DomainX - Opening main")
+			warn("SentinelX - Opening main")
 		end
 		OpenMain()
 		if DebugMode then
-			warn("DomainX - Opened Main")
+			warn("SentinelX - Opened Main")
 		end
 
 	else
@@ -3847,7 +3847,7 @@ function ContinueBoot()
 		Toast("Successfully upgraded license","GothamBlack")
 	end
 
-	Toast("Welcome to DomainX v"..Release.. ", "..LocalPlayer.DisplayName,"GothamBold")
+	Toast("Welcome to SentinelX v"..Release.. ", "..LocalPlayer.DisplayName,"GothamBold")
 
 	--if protected then
 	--	if Client ~= "Universal" then
