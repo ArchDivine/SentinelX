@@ -235,7 +235,7 @@ local UniversalScripts = {
 	Dex = {
 		Name = "Dex Explorer",
 		Author = "Moon",
-		Loadstring = "https://pastebin.com/raw/fPP8bZ8Z",
+		Loadstring = "https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua",
 		Colour = Color3.fromRGB(120, 170, 160),
 	},
 
