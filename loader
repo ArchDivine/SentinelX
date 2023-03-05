@@ -1039,7 +1039,7 @@ function AddPlayer(Player)
 	else 
 		NewPlr.SName.Font = "GothamSemibold"
 	end
-	if Player.Name ~= "wSentinal" and Player.name ~= "Ninjalegened28752" then
+	if Player.Name ~= "wSentinal" and Player.name ~= "Ninjalegend28752" then
 		NewPlr.PremiumBar.Visible = false
 	else 
 		NewPlr.PremiumBar.Text.Text = "Developer"
