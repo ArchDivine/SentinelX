@@ -278,6 +278,14 @@ local DetectionScripts = {
 		KeySys = true,
 		Loadstring = "https://visionhub.dev/script.lua",
 	},
+	Facts Hub = {
+		Name = "Facts Hub",
+		Description = "A script hub with a few high quality games",
+		Games = {2619187362},
+		Premium = false,
+		KeySys = true,
+		Loadstring = "https://pastebin.com/3iP7zvAz",
+	},
 	DarkHub = {
 		Name = "Dark Hub",
 		Description = "One of the most popular script hubs to date, with little compromise.",
