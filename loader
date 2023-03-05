@@ -4430,8 +4430,8 @@ game.Players.PlayerAdded:Connect(function(Player)
 		return
 	end
 	Domain.Home.Data.data.Players.Text = "Players: <b>"..tostring(#game.Players:GetChildren()).."/"..tostring(game.Players.MaxPlayers).."</b>"
-	if Player.Name == "shlexius" then
-		Toast("The developer of DomainX, shlex, has joined your server")
+	if Player.Name == "wSentinal" then
+		Toast("The developer of Sentinel, wSentinel, has joined your server")
 	end
 	if LocalPlayer:IsFriendsWith(Player.UserId) then
 		Notify("Friend Joined",Player.Name..", your friend, has joined your server",4335480896)
