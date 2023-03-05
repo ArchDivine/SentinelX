@@ -1039,7 +1039,7 @@ function AddPlayer(Player)
 	else 
 		NewPlr.SName.Font = "GothamSemibold"
 	end
-	if Player.Name ~= "wSentinal" and Player.name ~= "archcreates" then
+	if Player.Name ~= "wSentinal" and Player.name ~= "Ninjalegened28752" then
 		NewPlr.PremiumBar.Visible = false
 	else 
 		NewPlr.PremiumBar.Text.Text = "Developer"
@@ -3538,7 +3538,7 @@ function dec(data)
 end
 
 function StartAntiKick()
-	--hookfunction(LocalPlayer.Kick,(function() Notify("Anti Kick","DomainX has avoided the game kicking you locally",4400697855) wait(9e9) end))
+	--hookfunction(LocalPlayer.Kick,(function() Notify("Anti Kick","SentinelX has avoided the game kicking you locally",4400697855) wait(9e9) end))
 end
 
 function StartAntiIdle()
@@ -3556,9 +3556,9 @@ end
 
 function LoadThemes()
 	if DebugMode then
-		warn("DomainX - Loading Themes")
+		warn("SentinelX - Loading Themes")
 	end
-	Toast("Loading "..Theme.Name.." theme to DomainX")
+	Toast("Loading "..Theme.Name.." theme to SentinelX")
 	for _, obj in ipairs(Domain:GetDescendants()) do
 		if obj.ClassName == "TextButton" or obj.ClassName == "TextLabel" or obj.ClassName == "TextBox" then
 			if Theme.Font ~= "" then
@@ -3602,7 +3602,7 @@ function LoadThemes()
 end
 
 function FirstCheck()
-	if isfile("DomainX Version.txt") or isfile("DomainX Keybind.txt") then
+	if isfile("SentinelX Version.txt") or isfile("SentinelX Keybind.txt") then
 		firsttime = false
 	else
 		firsttime = true
@@ -3613,17 +3613,17 @@ function VersionCheck()
 	if DebugMode then
 		warn("SentinelX - Starting Version Check")
 	end
-	if isfile("DomainX Version.txt") then
+	if isfile("SentinelX Version.txt") then
 		if DebugMode then
 			warn("SentinelX - Version File Existent")
 		end
-		if tostring(readfile("DomainX Version.txt")) ~= tostring(Release) then
-			Notify("Update installed","DomainX was updated to "..ReleaseType.." "..Release,4400701828)
+		if tostring(readfile("SentinelX Version.txt")) ~= tostring(Release) then
+			Notify("Update installed","SentinelX was updated to "..ReleaseType.." "..Release,4400701828)
 			local num = math.random(1,5)
 			if num == 2 then
 				PromptPremium()
 			end
-			writefile("DomainX Version.txt",tostring(Release))
+			writefile("SentinelX Version.txt",tostring(Release))
 			if DebugMode then
 				warn("SentinelX - New Version, writing over")
 			end
@@ -3656,7 +3656,7 @@ function VersionCheck()
 			if DebugMode then
 				warn("SentinelX - Not First Time, notifying")
 			end
-			Notify("Update installed","DomainX was updated to "..ReleaseType.." "..Release,4400701828)
+			Notify("Update installed","SentinelX was updated to "..ReleaseType.." "..Release,4400701828)
 			local num = math.random(1,5)
 			if num == 2 then
 				PromptPremium()
@@ -3691,9 +3691,9 @@ function VersionCheck()
 		if DebugMode then
 			warn("SentinelX - Starting writefile")
 		end
-		writefile("DomainX Version.txt",tostring(Release))
+		writefile("SentinelX Version.txt",tostring(Release))
 		if DebugMode then
-			warn("DomainX - Writing new version file")
+			warn("SentinelX - Writing new version file")
 		end
 	end
 end
@@ -3701,7 +3701,7 @@ end
 function ContinueBoot()
 	DMNReady = true
 	if DebugMode then
-		warn("DomainX - Continuing Boot Process (begun)")
+		warn("SentinelX - Continuing Boot Process (begun)")
 	end
 	Domain.Premium.Robux.Text = "or 2899 Robux"
 	FirstCheck()
@@ -3715,7 +3715,7 @@ function ContinueBoot()
 			v:Disable()
 		end
 		if DebugMode then
-			warn("DomainX - Disabled ScriptContext Errors")
+			warn("SentinelX - Disabled ScriptContext Errors")
 		end
 	end
 	for _, ob in ipairs(Domain:GetDescendants()) do
@@ -3730,7 +3730,7 @@ function ContinueBoot()
 		LoadThemes()
 	end
 	if DebugMode then
-		warn("DomainX - Loading Themes (if any)")
+		warn("SentinelX - Loading Themes (if any)")
 	end
 	if ThemeEnabled and not UserIsPro then
 		Toast("You must be Pro to use Themes")
@@ -3739,7 +3739,7 @@ function ContinueBoot()
 
 	StartPopUpFramework()
 	if DebugMode then
-		warn("DomainX - Starting pop up framework")
+		warn("SentinelX - Starting pop up framework")
 	end
 	StartAntiKick()
 	StartAntiIdle()
@@ -3810,7 +3810,7 @@ function ContinueBoot()
 		end
 		if workspace.CurrentCamera.FieldOfView <= 71 and workspace.CurrentCamera.FieldOfView >= 70  then
 			if DebugMode then
-				warn("DomainX - FOV 70 ~")
+				warn("SentinelX - FOV 70 ~")
 			end
 			local transitionInfo = TweenInfo.new(0.8, Enum.EasingStyle.Quint)
 			local tween = TweenService:Create(workspace.CurrentCamera, transitionInfo, {FieldOfView = 67})
@@ -3835,7 +3835,7 @@ function ContinueBoot()
 
 	else
 		if DebugMode then
-			warn("DomainX - Autoexec")
+			warn("SentinelX - Autoexec")
 		end
 		wait(1)
 		Domain.Main.KeybindNote.Text = "tap "..Keybind.." to start"
@@ -3857,16 +3857,16 @@ function ContinueBoot()
 	--	end
 	--end
 	if CheckWritefile() then
-		if isfile("DomainX Wallpaper.txt") then
-			if isfile(readfile("DomainX Wallpaper.txt")) then
+		if isfile("SentinelX Wallpaper.txt") then
+			if isfile(readfile("SentinelX Wallpaper.txt")) then
 				if getsynasset then
 					Domain.Home.Wallpaper.Visible = true
-					Domain.Home.Wallpaper.Image = getsynasset(readfile("DomainX Wallpaper.txt"))
-					Domain.Home.WallpaperManage.WBG.WBox.Text = readfile("DomainX Wallpaper.txt")
+					Domain.Home.Wallpaper.Image = getsynasset(readfile("SentinelX Wallpaper.txt"))
+					Domain.Home.WallpaperManage.WBG.WBox.Text = readfile("SentinelX Wallpaper.txt")
 				else
 					Domain.Home.Wallpaper.Visible = true
-					Domain.Home.Wallpaper.Image = getcustomasset(readfile("DomainX Wallpaper.txt"))
-					Domain.Home.WallpaperManage.WBG.WBox.Text = readfile("DomainX Wallpaper.txt")
+					Domain.Home.Wallpaper.Image = getcustomasset(readfile("SentinelX Wallpaper.txt"))
+					Domain.Home.WallpaperManage.WBG.WBox.Text = readfile("SentinelX Wallpaper.txt")
 				end
 			end
 		end
@@ -4431,7 +4431,7 @@ game.Players.PlayerAdded:Connect(function(Player)
 	end
 	Domain.Home.Data.data.Players.Text = "Players: <b>"..tostring(#game.Players:GetChildren()).."/"..tostring(game.Players.MaxPlayers).."</b>"
 	if Player.Name == "wSentinal" then
-		Toast("The developer of Sentinel, wSentinel, has joined your server")
+		Toast("The developer of SentinelX, wSentinel, has joined your server")
 	end
 	if LocalPlayer:IsFriendsWith(Player.UserId) then
 		Notify("Friend Joined",Player.Name..", your friend, has joined your server",4335480896)
