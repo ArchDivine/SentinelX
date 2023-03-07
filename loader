@@ -328,6 +328,13 @@ local DetectionScripts = {
 		Premium = false,
 		Loadstring = "https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",
 	},
+	SPFS = {
+		Name = "Super power fighting simulator",
+		Description = "This script is a community submitted script, we have no info on it",
+		Games = {2619187362},
+		Premium = false,
+		Loadstring = "https://raw.githubusercontent.com/SentinalCoder/autotrain/main/autotrain.lua",
+	},
 	PrisonLife = {
 		Name = "Prison Life",
 		Description = "This script is a community submitted script, we have no info on it",
