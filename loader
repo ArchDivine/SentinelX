@@ -329,8 +329,8 @@ local DetectionScripts = {
 		Loadstring = "https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",
 	},
 	SPFS = {
-		Name = "Super power fighting simulator",
-		Description = "This script is a community submitted script, we have no info on it",
+		Name = "Super Power Fighting Simulator",
+		Description = "This script will autotrain your stats in SPFS",
 		Games = {2619187362},
 		Premium = false,
 		Loadstring = "https://raw.githubusercontent.com/SentinalCoder/autotrain/main/autotrain.lua",
