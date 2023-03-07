@@ -266,7 +266,7 @@ local DetectionScripts = {
 	Sirius = {
 		Name = "Sirius Loader",
 		Description = "The best script hub available",
-		Games = {286090429,3233893879,292439477},
+		Games = {3233893879,292439477},
 		Premium = false,
 		Loadstring = "https://raw.githubusercontent.com/shlexware/Sirius/request/Loader",
 	},
