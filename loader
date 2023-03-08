@@ -28,7 +28,7 @@ end
 if DebugMode then
 	warn("SentinelX - Game Loaded")
 end
-local KeySys = game:GetObjects("rbxassetid://12718359897")[1]
+local KeySys = game:GetObjects("rbxassetid://8065404628")[1]
 
 if DebugMode then
 	warn("SentinelX - Loaded KeyUI")
@@ -55,7 +55,7 @@ KeySys.Main.Visible = true
 
 for _, ui in ipairs(game:GetService("CoreGui"):GetChildren()) do
 	if ui.Name == "KeySystem" and ui ~= KeySys then
-		ui.Enabled = true
+		ui.Enabled = false
 		ui.Name = "KeySystemUnused"
 	end
 end
@@ -81,7 +81,7 @@ end
 -- DMNX
 
 
-local Domain = game:GetObjects("rbxassetid://12718401592")[1]
+local Domain = game:GetObjects("rbxassetid://7924540022")[1]
 
 if DebugMode then
 	warn("SentinelX - Loaded Main UI")
