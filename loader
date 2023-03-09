@@ -223,7 +223,7 @@ local UniversalScripts = {
 	SimpleSpy = {
 		Name = "SimpleSpy",
 		Author = "exx",
-		Loadstring = "https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua",
+		Loadstring = "https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua",
 		Colour = Color3.fromRGB(0, 170, 127),
 	},
 	cmdx = {
@@ -235,7 +235,7 @@ local UniversalScripts = {
 	Dex = {
 		Name = "Dex Explorer",
 		Author = "Moon",
-		Loadstring = "https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua",
+		Loadstring = "https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua",
 		Colour = Color3.fromRGB(120, 170, 160),
 	},
 
