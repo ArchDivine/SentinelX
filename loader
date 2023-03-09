@@ -81,7 +81,7 @@ end
 -- DMNX
 
 
-local Domain = game:GetObjects("rbxassetid://7924540022")[1]
+local Domain = game:GetObjects("rbxassetid://12726696203")[1]
 
 if DebugMode then
 	warn("SentinelX - Loaded Main UI")
