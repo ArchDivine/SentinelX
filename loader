@@ -81,7 +81,7 @@ end
 -- DMNX
 
 
-local Domain = game:GetObjects("rbxassetid://12718610856")[1]
+local Domain = game:GetObjects("rbxassetid://7924540022")[1]
 
 if DebugMode then
 	warn("SentinelX - Loaded Main UI")
@@ -214,10 +214,16 @@ local UniversalScripts = {
 		Loadstring = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
 		Colour = Color3.fromRGB(57, 57, 57),
 	},
+	SiriusUni = {
+		Name = "Sirius Universal",
+		Author = "Sentinel",
+		Loadstring = "https://raw.githubusercontent.com/shlexware/Sirius/request/game/Universal",
+		Colour = Color3.fromRGB(188, 57, 59),
+	},
 	SimpleSpy = {
 		Name = "SimpleSpy",
 		Author = "exx",
-		Loadstring = "https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua",
+		Loadstring = "https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua",
 		Colour = Color3.fromRGB(0, 170, 127),
 	},
 	cmdx = {
@@ -229,7 +235,7 @@ local UniversalScripts = {
 	Dex = {
 		Name = "Dex Explorer",
 		Author = "Moon",
-		Loadstring = "https://raw.githubusercontent.com/peyton2465/Dex/master/out.lua",
+		Loadstring = "https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua",
 		Colour = Color3.fromRGB(120, 170, 160),
 	},
 
